@@ -1,0 +1,21 @@
+x = 0
+if x > 0:
+  print("більше нуля")
+elif x < 0:
+  print("Меньше нуля")
+else:
+  print("Це нуль")
+print(x)
+
+x = 20
+y = 22
+if x > 0 and y > 0:
+    print ("x and y a pozitiv") 
+    
+year = 2000
+if not year % 4 and  year  % 100:
+  print("Високосний рік")
+elif not year % 400:
+  print ("Високосний рік")
+else:
+  print("Не високосний рік")
