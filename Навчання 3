@@ -1,0 +1,81 @@
+
+Stroki = """
+Текст для перевірки потрійних лапок,який може умістити велику кількість тексту ,з збереженням відсутпу
+
+Ось так.
+"""
+print(Stroki)
+
+First_name = "Roman"
+Last_name = "Teteriv"
+
+print(First_name + " " + Last_name)
+
+print(len(First_name + " " + Last_name))
+
+my_integer = 100
+my_string = str(my_integer)
+print (type(my_integer))
+
+my_int = int("10")
+print (type(my_int))
+
+my_string = int(input("Введіть число"))
+print (type(my_string))
+
+big_integer = 2 ** 1000
+print(len(str(big_integer)))
+
+my_string = "Hello World"
+print("Hello" in my_string)
+
+#З великої літери певний текст
+my_string = "Alice"
+print(my_string.upper())
+
+#З маленької літери певний текст
+my_string = "Alice"
+print(my_string.lower())
+
+#Стерти відступи з переду,і ззаду
+my_string = "    Hello World    "
+print(len(my_string))
+print(len(my_string.strip()))
+
+#Заміна певних слів
+my_string = "Hello World"
+print(my_string.replace("World" , "Python"))
+
+#Визначити кількусть(приклад літери)
+my_string = "Hello World"
+print(my_string.count("l"))
+
+#Наявність в строках цифр
+my_string = "10f"
+print(my_string.isdigit())
+
+#Ввід числа чи строки,з набуттям потрібного значення
+integer = (input("Введіть число"))
+if integer.isdigit():
+  integer = int(integer)
+print(type(integer))
+
+
+#Форматування
+name = "Alice"
+age = "23"
+print(f"Hello, my name is {name} and I'm {age} years old")
+
+x = 10
+y = 5
+print(f"summary is {x + y}, multiplication {x * y}")
+
+#Вичислення наявність числа
+my_string = input("Enter a number: ")
+
+if my_string.isdigit():
+    my_integer = int(my_string)
+    print(my_integer)
+else:
+    print(f"{my_string} is not a number")
+
