@@ -1,0 +1,33 @@
+x = -25
+y = 12.4
+z = x +  y
+print (x + y - z)
+x, y = y, x
+print(y + x + z)
+print(x,z,y)
+print(y ** y)
+print(y // 5)
+c = y // 5 
+print(c % 2)
+if y // 5 == c:
+    result = y + c
+    print("Результат:", result)
+    
+Int_test = 10
+float_test = 5.6
+print(Int_test, float_test)
+Int_test = float(Int_test)
+print(Int_test)
+float_test = int(float_test)
+print(float_test)
+float_test = 5.6
+float_test = round(float_test)
+print(float_test)
+
+print("Вкажіть квартиру для знаходження підїзду")
+Cvartira = input("")
+Cvartira = int(Cvartira)
+Kvartal_Kvartir = (Cvartira - 1) // 20 + 1
+Cvartira = (Cvartira -1) % 20 // 4 + 1
+print(Kvartal_Kvartir,"Підїзд")
+print(Cvartira,"Поверх")
