@@ -1,0 +1,80 @@
+first_name = "Tom"
+text = f"Hello, {first_name}."
+print(text)
+
+text = "Hello, {first_name}.".format(first_name="Diana")
+print(text)
+
+info = "Name: {name}\t Age: {age}".format(name="Volodia", age=23)
+print(info) 
+
+info = "Name: {0}\t Age: {1}".format("Bob", 23)
+print(info)
+
+
+#s: для вставки строк
+#d: для вставки целых чисел
+#f: для вставки дробных чисел. Для этого типа также можно определить через точку количество знаков в дробной части.
+#%: умножает значение на 100 и добавляет знак процента
+
+e: выводит число в экспоненциальной записи
+welcome = "Hello {:s}"
+name = "Tom"
+formatted_welcome = welcome.format(name)
+print(formatted_welcome)     
+
+number = 23.8589578
+print("{:.2f}".format(number))
+print("{:.3f}".format(number))
+print("{:.4f}".format(number))
+print("{:,.2f}".format(10001.23554))
+
+n = 5000
+source = f"{n:,d} символов"
+print(source)   
+
+print("{:10.2f}".format(23.8589578))    
+print("{:8d}".format(25))   
+
+n1 = 23.8589578
+print(f"{n1:10.2f}")
+n2 = 25
+print(f"{n2:8d}")  
+
+number = .12345
+print("{:%}".format(number))        
+print("{:.0%}".format(number))      
+print("{:.1%}".format(number))      
+ 
+print(f"{number:%}")    
+print(f"{number:.0%}")    
+print(f"{number:.1%}")  
+
+number = 12345.6789
+print("{:e}".format(number))        
+print("{:.0e}".format(number))  
+print("{:.1e}".format(number))  
+
+print(f"{number:e}")        
+print(f"{number:.0e}")  
+print(f"{number:.1e}")    
+
+info = "Имя: %s \t Возраст: %d" % ("Tom", 35)
+print(info)   
+
+number = 23.8589578
+print("%0.2f  - %e" % (number, number))  
+
+#Установка длины строки
+#С помощью специальных символов можно задать длину строки при форматировании:
+#<N: выравнивает строку по левому краю и дополняет ее пробелами с правой стороны до длины N
+#>N: выравнивает строку по правому краю и дополняет ее пробелами с левой стороны до длины N
+#^N: выравнивает строку по центру и дополняет ее пробелами с левой и правой стороны до длины N
+#.N: задает точную длину строки. Если в ней больше N символов, то она усекается
+
+str = "Hello World"
+print(f"{str:>16}!")     
+print(f"{str:<16}!")   
+print(f"{str:^16}!")
+print(f"{str:.16}!") 
+print(f"{str:.5}!") 
