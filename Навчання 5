@@ -1,0 +1,85 @@
+fruits = ["apple" , "banana" , "cherry"]
+print(fruits)
+
+fruits = ["apple" , "banana" , "cherry"]
+print(len(fruits))
+
+my_list1 = [1, 2, 3]
+my_list2 = [1, 3, 2]
+my_list3 = [1, 2, 3]
+
+print(my_list1 == my_list2)
+print(my_list1 == my_list3)
+
+print(bool([]))
+print(bool([0]))
+
+fruits = ["apple" , "banana" , "cherry"]
+print("banana" in fruits)
+print("Watermelon" in fruits)
+
+element1 = "apple"
+element2 = "banana"
+element3 = "cherry"
+
+fruits = [element1 , element2 , element3]
+print(fruits)
+
+word = "hello"
+my_list = list(word)
+print(my_list)
+
+my_list1 = [1, 2, 3]
+my_list2 = [4, 5, 6]
+my_list3 = my_list1 + my_list2
+print(my_list3)
+
+fruits = ["apple" , "banana" , "cherry"]
+fruits.append("watermelon")
+print(fruits)
+
+my_string = "hello, world"
+new_string = my_string.replace("world", "python")
+print(my_string)
+print(new_string)
+
+fruits = ["apple" , "banana" , "cherry"]
+fruits.append("watermelon")
+print(fruits)
+
+fruits = ["apple" , "banana" , "cherry"]
+fruit = fruits.pop()
+print(fruit)
+print(fruits)
+
+fruits = ["apple" , "banana" , "cherry"]
+fruits2 = ["fig", "grape"]
+
+fruits.extend(fruits2)
+print(fruits)
+
+fruits = ["apple" , "banana" , "cherry"]
+fruits.reverse()
+
+print(fruits)
+
+my_list = [5, 4, 8, 10, 1, 2, 14, 4]
+my_list.sort()
+print(my_list)
+
+my_list = [5, 4, 8, 10, 1, 2, 14, 4]
+my_list.sort(reverse=True)
+print(my_list)
+
+my_string = "My name is Vasil"
+my_list = my_string.split(" ")
+print(my_list)
+
+Joined_string = " ".join(my_list)
+print(Joined_string)
+
+my_list = [5, 4, 8, 10, 1, 2, 14, 4]
+print(max(my_list))
+print(min(my_list))
+print(sum(my_list))
+
