@@ -1,0 +1,68 @@
+def max_num(spesok):
+    cis = spesok[0]  
+    for spis_num in spesok:
+        if spis_num > cis:
+            cis = spis_num
+    return cis
+    
+def min_num(spesok):
+    cis = spesok[0] 
+    for spis_num in spesok:
+        if spis_num < cis:
+            cis = spis_num
+    return cis
+    
+def mid_num(spesok):
+    sred = sum(spesok) / len(spesok) 
+    return sred
+    
+def big_num(spesok):
+    max_count = 0 
+    result = None
+    for spis_num in spesok:
+        count = spesok.count(spis_num)
+        if count > max_count:
+            max_count = count
+            result = spis_num  
+    return result
+
+def dabl_num(spesok):
+    spesok_2 = []
+    for num in spesok:
+        if num % 2 == 0:
+            spesok_2.append(num)
+    return spesok_2
+
+def bolshe_num(spesok):
+    spesok_2 = []
+    for num in spesok:
+        if num > 10:
+            spesok_2.append(num)
+    return spesok_2
+
+def sort_num(spesok):
+    return sorted(spesok)
+
+spesok = []
+while True:
+    print("Список", spesok)
+    num = int(input("""
+    1.Добавити число
+    2.Показ Статистики
+    """))
+    if num == 1:
+        while True:
+            try:
+                nam = int(input("Введи число у список "))
+                spesok.append(nam)
+            except ValueError:
+                break
+    elif num == 2:
+        print("Максимальне число:", max_num(spesok))
+        print("Мінімальне число:", min_num(spesok))
+        print("Середнє число:", mid_num(spesok))
+        print("Найбільше повторюєтся:", big_num(spesok))
+        print("Парні числа:", dabl_num(spesok))
+        print("Більше 10:", bolshe_num(spesok))
+        print("Сортований список:", sort_num(spesok))
+        break
